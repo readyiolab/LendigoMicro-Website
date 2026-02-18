@@ -5,17 +5,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Mail, Phone, User } from "lucide-react";
+import { Mail, Phone, User, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
-  { icon: Phone, title: "Contact Us", details: ["+91-9311146939"] },
+  { icon: Phone, title: "Contact Us", details: ["+91-7827486530"] },
   { icon: Mail, title: "Send us an email", details: ["support@lendigomicrocare.com"] },
 ];
 
 const officers = [
-  { title: "Grievance Redressal Officer", name: "TARUN KUMAR SAXENA", phone: "+91-9311146939", email: "support@lendigomicrocare.com" },
-  { title: "Collections Manager", name: "SHAKTI SINGH SHEKHAWAT", phone: "+91-9311146939", email: "support@lendigomicrocare.com" },
+  { title: "Grievance Redressal Officer", name: "TARUN KUMAR SAXENA", phone: "+91-7827486530", email: "support@lendigomicrocare.com" },
+  { title: "Collections Manager", name: "SHAKTI SINGH SHEKHAWAT", phone: "+91-7827486530", email: "support@lendigomicrocare.com" },
 ];
 
 const Contact = () => {
@@ -89,6 +89,21 @@ const Contact = () => {
                     </div>
                   </div>
                 ))}
+
+                <a
+                  href="https://wa.me/917827486530"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-50/50 border border-green-200 rounded-2xl p-6 flex items-center gap-4 hover:bg-green-50 transition-colors"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center shrink-0">
+                    <MessageCircle className="w-5 h-5 text-green-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1 text-green-800">Chat on WhatsApp</h4>
+                    <p className="text-green-700 text-sm">Connect with us instantly</p>
+                  </div>
+                </a>
               </div>
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg">Key Contacts</h3>

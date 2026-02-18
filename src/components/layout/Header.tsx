@@ -46,12 +46,16 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="outline" size="sm" onClick={handleComingSoon}>
-              Repay Loan
-            </Button>
-            <Button size="sm" className="hero-gradient border-0" onClick={handleComingSoon}>
-              Get Started
-            </Button>
+            <a href="https://lendigomicrocare.com/repay" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm">
+                Repay Loan
+              </Button>
+            </a>
+            <a href="https://loan.lendigomicrocare.com/login" target="_blank" rel="noopener noreferrer">
+              <Button size="sm" className="hero-gradient border-0">
+                Get Started
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,12 +96,16 @@ export const Header = () => {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="outline" className="w-full" onClick={() => { setIsMenuOpen(false); handleComingSoon(); }}>
-                  Repay Loan
-                </Button>
-                <Button className="w-full hero-gradient border-0" onClick={() => { setIsMenuOpen(false); handleComingSoon(); }}>
-                  Get Started
-                </Button>
+                <a href="https://lendigomicrocare.com/repay" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button variant="outline" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Repay Loan
+                  </Button>
+                </a>
+                <a href="https://loan.lendigomicrocare.com/login" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button className="w-full hero-gradient border-0" onClick={() => setIsMenuOpen(false)}>
+                    Get Started
+                  </Button>
+                </a>
               </div>
             </nav>
           </motion.div>

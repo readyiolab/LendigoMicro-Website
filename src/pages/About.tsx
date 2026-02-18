@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
-import { 
+import {
   Zap, Settings, Sliders, Heart, Eye, Shield, Users, Headphones,
   Award, Building2, TrendingUp, CheckCircle2
 } from "lucide-react";
@@ -42,7 +42,7 @@ const About = () => {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
                 <Shield className="w-4 h-4" />
-                RBI Registered Since 2002
+                Regulated Since 2002
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -55,7 +55,7 @@ const About = () => {
               </p>
 
               <div className="flex flex-wrap items-center gap-4">
-                {["RBI Registered NBFC", "ISO Certified", "Bank-Grade Security"].map((badge) => (
+                {["Regulated Entity", "ISO Certified", "Bank-Grade Security"].map((badge) => (
                   <div key={badge} className="flex items-center gap-2 px-3 py-2 bg-card rounded-lg card-elevated">
                     <CheckCircle2 className="w-4 h-4 text-accent" />
                     <span className="text-sm font-medium">{badge}</span>
@@ -192,7 +192,7 @@ const About = () => {
             <div className="w-16 h-16 mx-auto rounded-2xl hero-gradient flex items-center justify-center mb-6">
               <Shield className="w-8 h-8 text-primary-foreground" />
             </div>
-            <h3 className="text-2xl font-bold mb-4">RBI Registered NBFC</h3>
+            <h3 className="text-2xl font-bold mb-4">Regulated Entity (NBFC)</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Lendigo Microcare is a brand unit of DEVMUNI LEASING & FINANCE LIMITED, an NBFC registered with the Reserve Bank of India since October 2002. Registration Number: B_14.02719
             </p>

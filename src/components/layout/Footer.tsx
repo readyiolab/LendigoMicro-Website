@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MessageCircle } from "lucide-react";
 
 
 export const Footer = () => {
@@ -68,7 +68,18 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-primary mt-0.5" />
-                <span className="text-muted-foreground text-sm">+91-9311146939</span>
+                <span className="text-muted-foreground text-sm">+91-7827486530</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <a
+                  href="https://wa.me/917827486530"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 hover:text-primary transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4 text-green-500 mt-0.5" />
+                  <span className="text-muted-foreground text-sm">Chat on WhatsApp</span>
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-primary mt-0.5" />

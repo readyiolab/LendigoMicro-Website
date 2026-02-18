@@ -41,7 +41,7 @@ const RefundPolicy = () => {
             </Section>
 
             <Section title="How to Request a Refund">
-              To request a refund or cancellation, you can contact our support team via email at <a href="mailto:support@lendigomicrocare.com" className="text-primary">support@lendigomicrocare.com</a> or call us at <a href="tel:+919311146939" className="text-primary">+91-9311146939</a>. Please provide your registered mobile number, PAN details, and loan reference number for faster processing.
+              To request a refund or cancellation, you can contact our support team via email at <a href="mailto:support@lendigomicrocare.com" className="text-primary">support@lendigomicrocare.com</a> or call us at <a href="tel:+917827486530" className="text-primary">+91-7827486530</a>. Please provide your registered mobile number, PAN details, and loan reference number for faster processing.
             </Section>
 
             <Section title="Refund Timeline">
