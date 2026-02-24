@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Mail, Phone, User, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 
 const contactInfo = [
   { icon: Phone, title: "Contact Us", details: ["+91-7827486530"] },
@@ -36,6 +37,12 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Contact Us"
+        description="Contact Lendigo Microcare for instant loan support. Reach out via phone, email, or WhatsApp for personalized financial assistance."
+        keywords="contact Lendigo Microcare, loan support, customer service, fintech help"
+        canonicalPath="/contact"
+      />
       <section className="section-padding bg-gradient-to-b from-secondary/50 to-background">
         <div className="container-narrow mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-3xl mx-auto">

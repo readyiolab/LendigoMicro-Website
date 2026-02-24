@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { HelpCircle, Search, MessageCircle, Shield, FileText, CreditCard, Lock } from "lucide-react";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import SEO from "@/components/SEO";
 
 const faqCategories = [
   {
@@ -54,6 +55,12 @@ const FAQs = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Frequently Asked Questions"
+        description="Find answers to common questions about Lendigo Microcare's instant personal loans, eligibility, interest rates, and repayment."
+        keywords="loan FAQs, instant loan questions, Lendigo Microcare help, loan eligibility"
+        canonicalPath="/faqs"
+      />
       <section className="relative overflow-hidden bg-gradient-to-b from-secondary/50 to-background section-padding">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />

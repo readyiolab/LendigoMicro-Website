@@ -4,6 +4,7 @@ import {
   Zap, Settings, Sliders, Heart, Eye, Shield, Users, Headphones,
   Award, Building2, TrendingUp, CheckCircle2
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const values = [
   { icon: Zap, title: "Speed", description: "Get funds when you need them most without unnecessary delays. Quick approvals and fast disbursals ensure life never comes to a standstill." },
@@ -26,6 +27,12 @@ const stats = [
 const About = () => {
   return (
     <Layout>
+      <SEO
+        title="About Us"
+        description="Learn about Lendigo Microcare, a regulated digital lender dedicated to inclusive financial growth and transparent borrowing since 2002."
+        keywords="Lendigo Microcare about, digital lending India, RBI regulated fintech, financial growth"
+        canonicalPath="/about"
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-secondary/50 to-background section-padding">
         <div className="absolute inset-0 overflow-hidden">

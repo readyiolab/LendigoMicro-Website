@@ -1,10 +1,17 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { RotateCcw } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const RefundPolicy = () => {
   return (
     <Layout>
+      <SEO
+        title="Refund Policy"
+        description="Transparent refund and cancellation policy for Lendigo Microcare. Learn about loan cancellation and excess payment refunds."
+        keywords="refund policy, loan cancellation, Lendigo Microcare refund"
+        canonicalPath="/refund-policy"
+      />
       <section className="section-padding bg-gradient-to-b from-secondary/50 to-background">
         <div className="container-narrow mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-3xl mx-auto">

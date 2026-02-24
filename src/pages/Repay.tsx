@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link2, FileText, ShieldCheck, Eye, CreditCard, Wallet, CheckCircle2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 
 const steps = [
   { icon: Link2, text: "Start with the Repayment Link" },
@@ -31,6 +32,12 @@ const Repay = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Repay Loan"
+        description="Repay your Lendigo Microcare loan quickly and securely. Verify your PAN and choose from multiple payment options including UPI and net banking."
+        keywords="repay loan, Lendigo Microcare payment, loan repayment, UPI payment"
+        canonicalPath="/repay"
+      />
       <section className="section-padding bg-gradient-to-b from-secondary/50 to-background">
         <div className="container-narrow mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-3xl mx-auto">

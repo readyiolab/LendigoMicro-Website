@@ -1,10 +1,17 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Shield } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const TermsAndConditions = () => {
   return (
     <Layout>
+      <SEO
+        title="Terms & Conditions"
+        description="Comprehensive terms and conditions for using Lendigo Microcare's lending services. Please read carefully before applying."
+        keywords="terms and conditions, loan agreement, Lendigo Microcare legal"
+        canonicalPath="/terms-and-conditions"
+      />
       <section className="section-padding bg-gradient-to-b from-secondary/50 to-background">
         <div className="container-narrow mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-3xl mx-auto">
