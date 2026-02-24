@@ -11,8 +11,7 @@ import { Button } from "@/components/ui/button";
 const faqs = [
   {
     question: "What is a Non-Banking Financial Company (NBFC)?",
-    answer:
-      "A Non-Banking Financial Company (NBFC) is a company registered under the Companies Act that provides financial services like loans and advances. NBFCs are regulated by the Reserve Bank of India (RBI) and are an important part of the financial sector.",
+    answer: "A Non-Banking Financial Company (NBFC) is a company registered under the Companies Act that provides financial services like loans and advances. Regulated Entities are regulated by the Reserve Bank of India (RBI) and are an important part of the financial sector.",
   },
   {
     question: "What is Lendigo Microcare and how does it work?",

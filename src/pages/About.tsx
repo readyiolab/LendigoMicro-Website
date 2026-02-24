@@ -105,7 +105,7 @@ const About = () => {
                   Welcome to Lendigo Microcare, a full-service digital lender dedicated to helping people get the money they need to achieve their goals. Lendigo Microcare is a FinTech company founded with the goal of integrating salaried professionals who had been turned down for credit by traditional banks into the appropriate credit structure.
                 </p>
                 <p>
-                  We are a brand unit of DEVMUNI LEASING & FINANCE LIMITED, an NBFC registered with the RBI in October 2002, under the registration number B_14.02719.
+                  We are a brand unit of DEVMUNI LEASING & FINANCE LIMITED, a Regulated Entity registered with the RBI in October 2002, under the registration number B_14.02719.
                 </p>
                 <p>
                   We make every attempt to process your online application fast and easily to get you the money you need. Our team of knowledgeable loan officers is committed to providing tailored service and innovative lending solutions to meet the various needs of each of our clients.
@@ -192,9 +192,9 @@ const About = () => {
             <div className="w-16 h-16 mx-auto rounded-2xl hero-gradient flex items-center justify-center mb-6">
               <Shield className="w-8 h-8 text-primary-foreground" />
             </div>
-            <h3 className="text-2xl font-bold mb-4">Regulated Entity (NBFC)</h3>
+            <h3 className="text-2xl font-bold mb-4">Regulated Entity</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Lendigo Microcare is a brand unit of DEVMUNI LEASING & FINANCE LIMITED, an NBFC registered with the Reserve Bank of India since October 2002. Registration Number: B_14.02719
+              Lendigo Microcare is a brand unit of DEVMUNI LEASING & FINANCE LIMITED, a Regulated Entity registered with the Reserve Bank of India since October 2002. Registration Number: B_14.02719
             </p>
           </motion.div>
         </div>

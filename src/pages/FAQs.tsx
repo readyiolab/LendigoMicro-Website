@@ -11,7 +11,7 @@ const faqCategories = [
     faqs: [
       { question: "What is a Non-Banking Financial Company (NBFC)?", answer: "A Non-Banking Financial Company (NBFC) is a company registered under the Companies Act that provides financial services like loans and advances. NBFCs are regulated by the Reserve Bank of India (RBI) and are an important part of the financial sector." },
       { question: "What is Lendigo Microcare and how does it work?", answer: "Lendigo Microcare is a digital lending platform that provides instant personal loans to salaried professionals. Simply download our app, fill in your basic details, submit required documents, and receive funds directly in your bank account within minutes of approval." },
-      { question: "Is Lendigo Microcare a legitimate company?", answer: "Yes, Lendigo Microcare is a legitimate and RBI-registered NBFC. We are a brand unit of DEVMUNI LEASING & FINANCE LIMITED, registered with RBI since October 2002 (Registration Number: B_14.02719)." },
+      { question: "Is Lendigo Microcare a legitimate company?", answer: "Yes, Lendigo Microcare is a legitimate and RBI-registered Regulated Entity. We are a brand unit of DEVMUNI LEASING & FINANCE LIMITED, registered with RBI since October 2002 (Registration Number: B_14.02719)." },
     ],
   },
   {

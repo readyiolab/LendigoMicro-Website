@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Heart, Gem, CreditCard, TrendingUp } from "lucide-react";
-import logo from "@/assets/logo.jpeg";
+const logo = "/assets/logo.jpeg";
 
 const useCases = [
   { icon: Heart, label: "Health" },

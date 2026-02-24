@@ -1,11 +1,41 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Clock, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import logo from "@/assets/logo.jpeg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel";
+
+const logo = "/assets/instant_loan_hero.png";
+const person1 = "/assets/person_loan_1.png";
+const person2 = "/assets/person_loan_2.png";
+const person3 = "/assets/person_loan_3.png";
+
+const heroImages = [
+  { src: person1, alt: "Happy young professional checking phone with loan approval" },
+  { src: person2, alt: "Couple looking at tablet, planning finances" },
+  { src: person3, alt: "Small business owner smiling with approved loan in cafe" },
+  { src: logo, alt: "Instant Loan 3D Illustration" }
+];
 
 export const HeroSection = () => {
   const { toast } = useToast();
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   const handleComingSoon = () => toast({ title: "Coming Soon!", description: "This feature will be available shortly." });
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-secondary/50 to-background section-padding">
@@ -72,45 +102,46 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative hidden lg:block"
           >
-            <div className="relative">
-              {/* Phone mockup */}
-              <div className="relative mx-auto w-72 h-[580px] bg-foreground rounded-[3rem] p-3 shadow-2xl">
-                <div className="w-full h-full bg-background rounded-[2.5rem] overflow-hidden flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <img src={logo} alt="Lendigo Microcare" className="w-32 h-auto mx-auto mb-4" />
-                    <h3 className="text-xl font-bold mb-2">Lendigo Microcare</h3>
-                    <p className="text-sm text-muted-foreground mb-6">Loans Made Easy</p>
-                    <div className="space-y-3">
-                      <div className="bg-secondary rounded-xl p-4 text-left">
-                        <p className="text-xs text-muted-foreground">Loan Amount</p>
-                        <p className="text-lg font-bold text-primary">₹50,000</p>
-                      </div>
-                      <div className="bg-secondary rounded-xl p-4 text-left">
-                        <p className="text-xs text-muted-foreground">Status</p>
-                        <p className="text-sm font-medium text-accent">✓ Approved</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div className="relative flex justify-center items-center h-[580px]">
+              <div className="relative w-full max-w-[500px]">
+                <Carousel
+                  setApi={setApi}
+                  opts={{
+                    loop: true,
+                  }}
+                  className="w-full"
+                >
+                  <CarouselContent>
+                    {heroImages.map((image, index) => (
+                      <CarouselItem key={index}>
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-[450px] object-cover rounded-3xl drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500"
+                        />
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                </Carousel>
               </div>
 
               {/* Floating elements */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -left-8 top-20 bg-background rounded-xl p-4 shadow-lg card-elevated"
+                className="absolute -left-4 top-20 bg-background/90 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-xl card-elevated"
               >
-                <p className="text-xs text-muted-foreground">Approved in</p>
-                <p className="text-lg font-bold text-primary">5 mins</p>
+                <p className="text-xs text-muted-foreground font-medium">Approved in</p>
+                <p className="text-xl font-bold text-primary">5 mins</p>
               </motion.div>
 
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute -right-8 bottom-32 bg-background rounded-xl p-4 shadow-lg card-elevated"
+                className="absolute -right-4 bottom-32 bg-background/90 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-xl card-elevated"
               >
-                <p className="text-xs text-muted-foreground">Interest Rate</p>
-                <p className="text-lg font-bold text-accent">From 1%</p>
+                <p className="text-xs text-muted-foreground font-medium">Interest Rate</p>
+                <p className="text-xl font-bold text-accent">From 1%</p>
               </motion.div>
             </div>
           </motion.div>

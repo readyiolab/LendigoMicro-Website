@@ -29,12 +29,23 @@ export const Footer = () => {
                 { name: "Repay Loan", path: "/repay" },
               ].map((link) => (
                 <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.name === "Repay Loan" ? (
+                    <a
+                      href="https://lendigomicrocare.com/repay"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={link.path}
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
